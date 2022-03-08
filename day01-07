@@ -1,0 +1,1213 @@
+package day02;
+
+public class DataTypeDemo {
+    public static void main(String[] args) {
+        /*
+        int b = 1000000000;
+        int a = 999999999;
+        System.out.println(a + b + b + b + b + b);
+        long aa = 100000000000L;
+        long as = 10000000L * 23 * 2300000;
+        System.out.println(as);
+        long aas = 529000000000000L;
+        if(aas == as){
+            System.out.println("ddddd");
+        }
+        long account = 1000000000000000000L;
+        long account2 = account * 33344000 * 33492139220L;
+        System.out.println(account2);
+
+
+        //3）double:
+        double a = 3.14;
+        float as = 3.14F;
+        double c = 12340000000000000000000.0;
+        System.out.println(c);
+        double d = 3.0, e = 2.9;
+
+        boolean b1 = true;
+        boolean b2 = false;
+        if((2.4 > 3) == b1){
+            System.out.println("edddd");
+        }
+            char c1 = '女';//字符女
+            char c8 = 65535;
+            System.out.println(c1);
+            char C2 = 'e';
+            int c3 = 34;
+            char C3 = 34;
+            int sa = c1;
+            char C4 = 22899;
+            System.out.println(c3);
+            System.out.println(C3);
+            System.out.println(sa);
+            System.out.println(C4);
+
+        int a = 5;
+        long b = a;
+        int c = (int)b;
+
+        long d = 5;
+        double e = 5;
+        long f = 100000000000L;
+        int g = (int) f;
+        System.out.println(g);
+        double h = (int) 25.733332;
+        System.out.println(h);
+        byte b3  = (byte)(b1 + b2);
+
+        System.out.println('2' + '2');
+        System.out.println('2' + 3);
+        System.out.println('2');
+          */
+        /*
+        1.java开发环境
+        编译运行过程
+            编译期：Java源文件，经过编译，生成.class字节码文件
+            运行期:JVM加载.class并运行.class(0/1
+         */
+    }
+}
+package day02;
+
+public class HomeWork {
+    public static void main(String[] args) {
+        //1.变量的练习：
+        //声明：
+        int age = 102;
+        int age1 = 110, age2 = 112, age3 = 114;//声明一个变量，一次声明多个变量
+
+
+        int number = 33;
+        number = 44;////声明变量直接初始化，先声明变量，而后在给变量初始化
+
+        int g = 5;
+        int h = g + 10;
+        System.out.println(h);//声明整型变量g，生命另一个整型变量h并赋值为h + 10,输出变量h的值。
+
+
+        int i = 10;
+        i = i + 10;
+        System.out.println(i);//声明整型变量i，在i本身基础上增10，输出变量i的值。
+
+        /*
+        正确的变量名
+        int i = 1;
+        int age = 10;
+        int number = 22;
+        int age$ = 223;
+        int age3 = 333;
+        int $age = 3333;
+         */
+
+        /*
+        错误的变量名
+        int 3age = 33;
+        int int = 33;
+        int public = 33;
+        int static = 33;
+         */
+
+
+        //2.基本数据类型的练习：int
+
+        //声明初始化两个以上整数变量，并且输出两个证书变量的除法结果。
+        int score = 33, score2 = 33, score3 =44;
+        System.out.println(score3 / (score2 + score));
+
+
+        //声明两个很大的变量，然后相加，输出运算结果，测试运算溢出结果。
+        int a = 243333333;
+        int b = 333333333;
+        System.out.println(a + b);
+
+        double ab = 3.22;
+        int ba = 122;
+        System.out.println(ba / ab);
+        System.out.println(5 / 2);
+        System.out.println(5.0 / 2);
+        System.out.println(5 / 2.0);
+
+        //3.基本数据类型的练习：long
+        //声明初始化两个以上的长整型变量
+        long aaa = 3000000000L;
+        long bbb = 400000000000L;
+        long ccc = 40349343232L;
+
+        //声明变量存储几个较大数据的运算，演示：若有可能溢出建议将L设计在第一个数字后
+        int aaaa = 993232323;
+        int bbbb = 934343422;
+        int cccc = aaaa + bbbb;
+        long f = 10000000000L * 3 * 10;
+        long ff = 10000000000L * 3 * 10;
+        System.out.println(cccc);
+
+
+        // 声明初始化两个以上的浮点型变量
+        double dddd = 3.22222;
+        double eeee = 4.22344;
+        double ffff = 323.44455656;
+
+        //声明几个浮点型变量并将她们做数学操作，演示double运算的舍入误差问题
+        double gggg = 15.3;
+        double hhhh = 20.0;
+        System.out.println(hhhh - gggg);//这里证明了有可能发生舍入误差
+
+        //5.基本数据类型的练习：Boolean
+
+        //声明初始化两个以上的布尔型变量
+        boolean C1 = true;
+        boolean C2 = false;
+        //boolean c3 = 25;//编译错误，布尔型只能赋值为true或者false
+
+
+        //6.基本数据类型的练习：char
+
+        //声明初始化五个以上的字符型变量
+        char c1 = 'n';
+        char c2 = '#';
+        char c3 = '5';
+        char c4 = '人';
+        char c5 = '3';
+
+        //声明字符型变量，演示转义符
+        char c6 = '\'';
+        char c7 = '\\';
+        char c8 = 88;
+
+        //7.基本数据类型的转换：两种方式
+
+        //声明几个变量，演示自动类型转换和强制类型转换的语法
+        long vvvv = 3333333333L;
+        int vvvvv = (int)vvvv;
+
+        int  vvvvvv = 33333333;
+        long vvvvvvv = vvvvvv;
+
+        //声明一个较大精度的浮点型变量，演示强转可能会发生的丢失精度问题
+
+        double bbbbbbb = 333.223432424;
+        float ddddddd = (float)bbbbbbb;
+
+        //声明一个较大类型的长整型变量，演示强转可能会发生的溢出问题
+
+        long vbbbb = 4444444444L;
+        int bvvvv = (int)vbbbb;
+
+        //基本数据类型的转换：两点规则
+
+        //声明两个byte型变量b1 和 b2，并赋值为直接量
+
+        byte bvdfefdf = 4;
+        byte dgdgdgdg = 2;
+        byte dfdfdffeee = (byte)(bvdfefdf + dgdgdgdg);
+
+        //声明一个byte型变量，并赋值为b1 和 b2 的和。
+
+        System.out.println(2 + 2);
+        System.out.println(2 + '2');
+        System.out.println('2' + '2');
+
+
+
+
+
+
+
+    }
+}
+package day02;
+
+public class VarDemo {
+    public static void main(String[] args) {
+
+        int score, myScore, myJavaScore;
+
+    }
+}
+package day03;
+
+public class test {
+    public static void main(String[] args) {
+      /*  int a = 11;
+        int b = 22;
+        int d = 22;
+        int c = 0;
+        a = b++;
+        c = ++d;
+        System.out.println(a);
+        System.out.println(c);
+
+
+        int aa = 22;
+        int bb = 22;
+        aa++;
+        ++bb;s
+        System.out.println(aa);
+        System.out.println(bb);
+
+
+       */
+
+    }
+}
+package day04;
+import java.util.Scanner;
+public class CommandBySwitch {
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+
+        /*
+        System.out.println("请选择功能：1.存款 2，取款 3.查询余额 0. 退卡");
+
+        while(true){
+            int Command = scan.nextInt();
+            switch(Command){
+                case 1 :
+                    System.out.println("存款");
+                    break;
+                case 2:
+                    System.out.println("取款");
+                    break;
+                case 3:
+                    System.out.println("查询余额");
+                    break;
+                case 0:
+                    System.out.println("退卡");
+                    break;
+                default:
+                    System.out.println("输入错误，请重新输入");
+
+            }
+
+         */
+                int count = 0;
+                while(count < 5){
+                    System.out.println("d");
+                    count++;
+        }
+                int num = 1;
+                while(num < 10){
+                    System.out.println(num + "* 9 =" + (num * 9));
+                    num++;
+                }
+                
+        /*
+        import java.util.Scanner;
+        Scanner scan = new Scanner(System.in);
+        int Command = scan.nextInt();
+         */
+    }
+}
+package day04;
+/*
+import java.util.Random;
+import java.util.Scanner;
+public class Guessing {
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        Random random = new Random();
+        int num = random.nextInt(1001) + 1;
+        System.out.println("please input 1 ~ 1000 number");
+        int guess = scan.nextInt();
+        while(guess != num){
+
+            if(guess > num){
+                System.out.println("bigger");
+                guess = scan.nextInt();
+            }else{
+                System.out.println("smaller");
+                guess = scan.nextInt();
+            }
+        }
+        System.out.println("right");
+        //666~689
+    }
+}
+
+
+
+
+import java.util.Scanner;
+import java.util.Random;
+public class Guessing {
+    public static void main(String[] args){
+        Random random = new Random();
+        Scanner scan = new Scanner(System.in);
+        int num = random.nextInt(1001) + 1;
+        int guess = scan.nextInt();
+        while(guess != num){
+            if(guess > num){
+                System.out.println("bigger");
+                guess = scan.nextInt();
+            }else{
+                System.out.println("smaller");
+                guess = scan.nextInt();
+            }
+        }
+        System.out.println("right");
+    }
+}
+
+import java.util.Scanner;
+import java.util.Random;
+public class Guessing{
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        Random random = new Random();
+        int guess = scan.nextInt();
+        int num = random.nextInt(1001) + 1;
+        while(guess != num){
+            if(guess > num){
+                System.out.println("bigger");
+                guess = scan.nextInt();
+            }else{
+                System.out.println("smaller");
+                guess = scan.nextInt();
+            }
+        }
+        System.out.println("right");
+    }
+}
+ */
+import java.util.Scanner;
+public class Guessing{
+    public static void main(String[] args){
+       /* Scanner scan = new Scanner(System.in);
+        int num = (int)(Math.random() * 1000) + 1;
+        int guess = scan.nextInt();
+        while(guess != num){
+            if(guess < num){
+                System.out.println("smaller");
+                guess = scan.nextInt();
+            }else{
+                System.out.println("bigger");
+                guess = scan.nextInt();
+            }
+        }
+        System.out.println("right");
+
+         Scanner scan = new Scanner(System.in);
+         int number = (int)(Math.random() * 1000) + 1;
+         int guess;
+         do{
+             System.out.println(number);
+             guess = scan.nextInt();
+             if(guess > number){
+                 System.out.println("bigger");
+             }else if(guess < number){
+                 System.out.println("smaller");
+             }else{
+                 System.out.println("right");
+                 break;
+             }
+         }while(true);
+
+        short a = 91;
+        String name = "WKJ";
+        int b = 33;
+        a += 5;
+        a = (short)(a + 5);
+        System.out.println("大家好，我叫" + name + ",今年" + b + "岁了");
+        */
+        int a = 9;
+        int b = 33;
+        int c = 333;
+        int max = a > b ? a : b;
+        int Max = a > (b > c ? b : c) ? a : (b > c ? b : c);
+        System.out.println(max);
+        System.out.println(Max);
+    }
+
+}
+
+package day04;
+import java.util.Scanner;
+import java.util.Random;
+public class HomeWork {
+    /*
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        int score = scan.nextInt();
+        if(score <= 0 && score >= 100){
+            System.out.println("wrong");
+        }else if(score >= 90){
+            System.out.println("A");
+        }else if(score >= 60){
+            System.out.println("B");
+        }else{
+            System.out.println("C");
+        }
+    }
+
+
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        int input = scan.nextInt();
+        switch(input){
+            case 1:
+                System.out.println("qu kuan");
+                break;
+            case 2:
+                System.out.println("cun kuan ");
+                break;
+            case 3:
+                System.out.println("tuika");
+                break;
+        }
+    }
+
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        Random ran = new Random();
+        int guess = scan.nextInt();
+        int num = ran.nextInt(1001) + 1;
+        while(num != guess){
+            if(num < guess){
+                System.out.println("bigger");
+            }else{
+                System.out.println("smaller");
+            }
+
+            System.out.println("again");
+            guess = scan.nextInt();
+        }
+        System.out.println("right");
+    }
+      */
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        Random ran = new Random();
+        int num = ran.nextInt(1001) + 1;
+        int guess;
+        do {
+            guess = scan.nextInt();
+            if (guess == num) {
+                System.out.println("right");
+                break;
+            } else if (guess > num) {
+                System.out.println("bigger");
+            } else {
+                System.out.println("smaller");
+            }
+        } while (true);
+
+
+    }
+/*package day04;
+import java.util.Scanner;
+public class HomeWork2 {
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        int num = scan.nextInt();
+        //System.out.println("quit please input 'q'");
+            if(num > 0){
+                System.out.println("+");
+            }else if(num < 0){
+                System.out.println("-");
+            }else {
+                System.out.println("0");
+            }
+        }
+    }
+
+
+package day04;
+import java.util.Scanner;
+public class HomeWork2 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int year = scan.nextInt();
+        int month = scan.nextInt();
+        if (year % 100 != 0 && year % 4 == 0 || year % 400 == 0) {
+            switch (month) {
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                    System.out.println("31");
+                    break;
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    System.out.println("30");
+                    break;
+                case 2:
+                    System.out.println("29");
+                    break;
+            }
+        } else {
+            switch (month) {
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                    System.out.println("31");
+                    break;
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    System.out.println("30");
+                    break;
+                case 2:
+                    System.out.println("28");
+                    break;
+            }
+        }
+    }
+}
+ */
+package day04;
+public class HomeWork2 {
+    public static void main(String[] args){
+        int count = 0;
+        int i = 1;
+        while(i < 101){
+            count += i;
+            i++;
+        }
+        System.out.println(count);package day04;
+   //import java.util.Scanner;
+import java.util.Scanner;
+public class ScoreLevel {
+    /*
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        System.out.println("请输入成绩");
+        double score = scan.nextDouble();
+        //System.out.println(score);
+        if(score > 100 || score < 0){
+            System.out.println("wrong input~");
+        }else if(score >= 90){
+            System.out.println("A");
+        }else if(score >= 80){
+            System.out.println("B");
+        }else if(score >= 60){
+            System.out.println("D");
+        }else{
+            System.out.println("E");
+        }
+    }
+
+     */
+
+    public static void main(String[] args){
+        Scanner scan = new Scanner (System.in);
+        System.out.println("please input");
+        int score = scan.nextInt();
+        if(score > 100 || score < 0){
+            System.out.println("wrong input");
+        }else if(score >= 90){
+            System.out.println("A");
+        }else if(score >= 80){
+            System.out.println("B");
+        }else if(score >= 60)
+            System.out.println("C");
+        else{
+            System.out.println("D");
+}
+    }
+package day04;
+
+public class WhileDemo {
+    public static void main(String[] args){
+
+        int i = 0;
+        int j = 0;
+        for(i = 1; i < 10; i++){
+            for(j = 1; j <= i; j++){
+                System.out.print(j + "*" + i + "=" + (j * i)+"\t");
+
+            }
+            System.out.print("\n");
+
+
+        }
+
+    }
+}
+package day05;
+import java.util.Scanner;
+import java.util.Random;
+public class Addition {
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        Random random = new Random();
+        int guess;
+        int count = 0;
+        for(int i = 0; i < 10; i++){
+            int num1 = random.nextInt(1000) + 1;
+            int num2 = random.nextInt(1000) + 1;
+            System.out.println(num1 + "+" + num2 + "=" + "?");
+
+            guess = scan.nextInt();
+            if(num1 + num2 == guess){
+                System.out.println("正确");
+                count += 10;
+            }else{
+                System.out.println("错误");
+            }
+        }
+        System.out.println("您的分数是" + count);
+    }
+}
+*/
+package day05;
+public class Addition{
+    public static void main(String[] args){
+
+    }
+}
+package day05;
+
+public class ArrayDemo {
+    public static void main(String[] args){
+        /*
+        //1)数组的定义:
+        //声明整形数组arr;包含10个元素,每个元素都是int类型,默认值为0
+        int[] arr = new int[10];
+
+        //2)数组的初始化:初始化的是数组中的元素
+        int[] arr1 = new int[3];  //0,0,0
+        int[] arr2 = {2, 5, 8};   //2,5,8
+        int[] arr3 = new int[]{2, 5, 8};   //2, 5, 8
+        int[] arr4;
+        //arr4 = {2, 5, 8}; //编译错误,此方式只能声明同时初始化
+        arr4 = new int[]{2, 5, 8};
+
+
+        //1)数组的定义:
+        //声明整形数组arr;包含10个元素,每个元素都是int类型,默认值为0
+        int[] arr = new int[10];
+
+        //2)数组的初始化:初始化的是数组中的元素
+        int[] arr1 = new int[3];
+        int[] arr2 = {2, 5, 8};
+        int[] arr3 = new int[]{2, 5, 8};
+        int[] arr4;
+        //arr4 = {2, 5, 8};//编译错误,此方式只能声明同时初始化
+        arr4 = new int[]{2, 5, 8};
+
+        int[] arr = new int[3];
+
+        //3)数组的访问:访问的是数组中的元素
+        int[] arr4 = new int[3];
+        System.out.println(arr[0]);//输出第一个元素
+        arr[0] = 100;//给第一个元素赋值为100;
+        arr[1] = 200;//给第二个元素赋值为200;
+        arr[2] = 300;//给第三个元素赋值为300;
+        \
+       arr[3] = 400; */
+    }
+}
+package day05;
+
+public class ForDemo {
+    public static void main(String[] args){
+        int num = 0;
+        for(num = 1; num < 10; num++){
+            if(num == 6){
+                break;
+            }
+            if(num == 3){
+                continue;
+            }
+            System.out.println(num + "* 9 = " + num * 9);
+        }
+        for(num = 1; num < 10; num += 2){
+            System.out.println(num + "* 9 =" + num * 9);
+        }
+        for(num = 0; num < 5; num++){
+            System.out.println("行动是成功的阶梯");
+
+        }
+    }
+}
+/*
+package day04;
+
+public class MultiTable {
+    public static void main(String[] args){
+       int i;
+       for(i = 1; i < 10; i++){
+           for(int j = 1; j <= i; j++){
+               System.out.print(j + "*" + i + "=" + j * i + '\t');
+           }
+           System.out.println();
+       }
+
+    }
+}
+
+package day05;
+import java.util.Scanner;
+import java.util.Random;
+public class MlitiTable{
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        Random random = new Random();
+        int num = scan.nextInt();
+        int guess = random.nextInt(1000) + 1;
+
+    }
+}
+
+ */
+package day05;
+public class MultiTable{
+    
+}
+/*package day05;
+import java.util.Scanner;
+import java.util.Random;
+public class practise {
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        Random ran = new Random();
+        int num = ran.nextInt(101) + 1;
+        int guess;
+        do{
+            guess = scan.nextInt();
+            if(guess != num){
+                if(guess > num){
+                    System.out.println("bigger");
+                }else{
+                    System.out.println("smaller");
+                }
+            }else{
+                System.out.println("right");
+                break;
+            }
+        }while(true);
+
+    }
+}
+
+
+ */
+package day05;
+import java.util.Scanner;
+import java.util.Random;
+public class practise{
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        Random random = new Random();
+        int num = random.nextInt(10) + 1;
+        int guess;
+        do{
+            guess = scan.nextInt();
+            if(guess > num){
+                System.out.println("bigger");
+            }else if(guess < num){
+                System.out.println("smaller");
+            }else{
+                System.out.println("right");
+                break;
+            }
+        }while(true);
+    }
+}
+package day06;
+import java.util.Arrays;
+public class ArrayDemo {
+    public static void main(String[] args){
+//        int a[] = {22, 33, 44, 55, 66};
+//        int b[] = {0, 0, 0, 0, 0, 0};
+//        System.arraycopy( a, 1, b, 2, 4);
+//        for(int i = 0; i < b.length; i++){
+//            System.out.println(b[i]);
+//
+//        }s
+//            System.arraycopy(b, 3, a, 3, 3);
+//        a = Arrays.copyOf(b,b.length);
+//        Arrays.sort(a);
+//        for(int i = 0; i < b.length; i++) {
+//                System.out.print(a[i] + " ");
+//            }
+        int[] a = new int[6];
+        int[] b = {266, 33, 24 ,5444 ,56, 67};
+        a = Arrays.copyOf(b, b.length);
+        Arrays.sort(a);
+        for(int i = 0; i < a.length; i++){
+            System.out.print(a[i] + " ");
+        }
+
+        System.arraycopy(a, 0, b, 0, 3);
+package day06;
+import java.util.Arrays;
+public class HomeWork {
+    public static void main(String[] args){
+        int[] arr = new int [10];
+        for(int i = 0; i < arr.length; i++){
+            arr[i] = (int)(Math.random() * 100);
+        }
+        int[] arr1 = new int[11];
+        arr1 = findBigger(arr);
+        for(int i = 0; i < arr1.length; i++){
+            System.out.println(arr1[i]); 
+        }
+
+    }
+    public static int[] findBigger(int arr[]){
+        int max = arr[0];
+        for(int i = 1; i < arr.length; i++){
+            if(arr[i] > max){
+                max = arr[i];
+            }
+        }
+            arr = Arrays.copyOf(arr, arr.length + 1);
+            arr[arr.length - 1] = max;
+            System.out.println("max num is: " + max);
+            return arr;
+    }
+}/*
+package day06;
+public class HomeWork2 {
+    public static void main(String[] args){
+        int i = 0;
+        int count = 0;
+        for(i = 0; i < 101; i += 2){
+            count += i;
+        }
+        System.out.println(count);
+
+    }
+}
+
+package day06;
+public class HomeWork2 {
+    public static void main(String[] args){
+
+    int i = 1;
+        int count = 1;
+        for(i = 1; i < 9; i++){
+            count *= i;
+        }
+        System.out.println(count);
+    }
+}
+
+package day06;
+public class HomeWork2 {
+    public static void main(String[] args){
+        int i = 0;
+        int j = 0;
+        int k = 0;
+        for(i = 0; i < 6; i++){
+            for(k = 1; k <= 6 - i; k++){
+            System.out.print(" ");
+            }
+            for(j = 1; j <= (2 * i) + 1; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+            System.out.println(arr[arr.length])
+        }
+    }
+}
+
+package day06;
+import java.util.Random;
+import java.util.Scanner;
+public class HomeWork2 {
+    public static void main(String[] args){
+        Random random = new Random();
+        Scanner scan = new Scanner(System.in);
+        int i = 0;
+        int total = 0;
+        for(i = 0; i < 10; i++){
+            int num1 = random.nextInt(100) + 1;
+            int num2 = random.nextInt(100) + 1;
+            System.out.println(num1 + "+" + num2 + "=");
+            int number = scan.nextInt();
+            if(number == num1 + num2){
+                System.out.println("right");
+                total += 10;
+            }else{
+                System.out.println("wrong");
+            }
+        }
+        System.out.println(total);
+    }
+
+}
+*/
+package day06;
+ import java.util.Scanner;
+import java.util.Arrays;
+public class HomeWork2 {
+    public static void main(String[] args){
+//        int[] arr = {22, 33, 55, 66, 77, 88, 22, 33};
+//        Arrays.sort(arr);
+//        for(int i = 0; i < arr.length; i++){
+//            System.out.println(arr[i]);
+//        }
+//        int[] arr = {33, 44, 55, 222, 334};
+//        Scanner scan = new Scanner(System.in);
+//        deleteNum(4, arr);
+//    }
+//    public static void deleteNum(int i,int[] arr1){
+//        for(int j = 0; j < arr1.length; j++){
+//            if(j == (i - 1)){
+//                continue;
+//            }
+//            System.out.println(arr1[j]);
+//        }
+//        Scanner scan = new Scanner(System.in);
+//        int a = scan.nextInt();
+//        int b = scan.nextInt();
+//        int[] arr = generate(a, b);
+//        for(int i = 0; i < arr.length; i++){
+//            System.out.println(arr[i]);
+//        }
+//    }
+//    public static int[] generate(int a ,int b){
+//        int[] arr1 = new int[a];
+//        for(int i = 0; i < arr1.length; i++){
+//            arr1[i] = (int)(Math.random() * (b / 0.99));
+//        }
+//        return arr1;
+
+    }
+}package day06;
+import java.util.Scanner;
+import java.util.Random;
+import java.util.Arrays;
+/*
+public class MaxIfArray {
+    public static void main(String[] args){
+        int[] arr = new int[3];
+        int[] arr2 = new int[3];
+        int i = 0;
+        for(i = 0; i < 3; i++){
+            arr[i] = 100;
+            arr2[i] = (int)(Math.random() * 100);
+            System.out.println(arr[i]);
+            System.out.println(arr2[i]);
+        }
+    }
+}
+b d c b a c d c d a d b c a d
+ */
+public class MaxIfArray {
+    public static void main(String[] args){
+        int arr[] = new int[3];
+        for(int i = 0; i < arr.length; i++){
+            arr[i] = (int)(Math.random() * 100);
+        }
+        int max = arr[0];
+        for(int i = 1; i < arr.length; i++){
+            if(arr[i] > max){
+                max = arr[i];
+            }
+        }
+        System.out.println(max);
+        arr = Arrays.copyOf(arr, arr.length + 1);//扩容
+        arr[arr.length - 1] = max;//奖最大值max赋值给arr的最后一个元素
+        for(int i = 0; i < arr.length; i++){
+            System.out.println(arr[i]);
+        }
+    }
+}import java.util.Arrays;
+public class MethodDemo {
+    public static void main(String[] args) {
+//        int a = 2233;
+//        int b = 334323;
+//        int c = plus(a, b);
+//        System.out.println(c);
+//        say();
+//    }
+//    public static int plus(int a, int b){
+//        return a + b ;
+//    }
+//    public static void say(){
+//        System.out.println("hahahahahaah");
+//        sayHi("你猜我叫什么,猜不着吧~");
+//        sayHello("这次告诉你我的名字,我的名字叫张三", 33);
+//    }
+//        double d = 9.22;
+//        double r = 232.22;
+//         int eee = plus(d, r);
+//         System.out.println(eee);
+//}
+//    public static void sayHi(String name){
+//        System.out.println("你的名字叫" + name);
+//    }
+//    public static void sayHello(String name, int age){
+//        System.out.println("你的名字叫" + name + ",今年" + age + "岁了");
+//    }
+//    public static int plus (double a, double b){
+//        return ((int)(a + b));
+//    }
+//}
+//        double a =  getNum();
+//        System.out.println(a);
+//        int a = 2222;
+//        int b = 33;
+//        int c = plus(a, b);
+//        int d = plus(3, 2);
+//        System.out.println(c);
+//        System.out.println(d);
+//        int [] d = testArray();
+//        for(int i = 0; i < d.length; i++){
+//            System.out.println(d[i]);
+//        }
+//        Arrays.sort(d);
+//        for(int i = 0; i < d.length; i++){
+//            System.out.println(d[i]);
+//        }
+
+
+
+
+
+    }
+
+    //    public static double getNum(){
+//        return 8.88;
+//        public static int plus(int num1, int num2 ){
+//        int num = num1 + num2;
+//        return num;
+//    public static int[] testArray() {
+//        int[] arr = new int[20];
+//        for(int i = 0; i < arr.length; i++){
+//            arr[i] = (int) (Math.random() * 101);
+//        }
+//        return arr;
+
+
+
+
+    }
+import java.util.Scanner;
+public class NightClass {
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        double[] score = new double[10];
+        int i = 0;
+        int j = 0;
+        double total = 0;
+        double tmp = 0;
+        for(i = 0; i < score.length; i++){
+            System.out.println("请输入第" + (i + 1) + "个学生的成绩");
+            score[i] = scan.nextDouble();
+        }
+        for(i = 0; i < score.length; i++){
+            total += score[i];
+        }
+        System.out.println("总分为" + total + ",平均分为" + (total / score.length));
+
+        for(i = 0; i < score.length - 1; i++){
+            for(j = 0; j < score.length - 1 - i; j++){
+                if(score[i] > score[i + 1]){
+                    score[i] = score[i + 1];
+                    tmp = score[i];
+                    score[i + 1] = tmp;
+                }
+            }
+        }
+        System.out.println(score[score.length - 1]);
+    }
+}
+package day06;
+
+public class Test {
+    public static void main(String[] args){
+        say();
+        sayHi("Anna");
+        sayHello("Anna", 14);
+        double account = getNum();
+        int num = plus(4, 33);
+        System.out.println("获取到的数字是:" + account);
+        System.out.println("4 + 33 = " + num);
+        int[] arr1 = {2, 555, 666, 777, 88, 5565, 777, 44343, 65665};
+        int min = getMinOfArray(arr1);
+        System.out.println("数组中的最小值为:" + min );
+    }
+    public static void say(){
+        System.out.println("My name is Cate");
+    }
+    public static void sayHi(String arr){
+        System.out.println("My name is " + arr);
+    }
+    public static void sayHello(String arr,int age){
+        System.out.println("My name is " + arr + ", I'm " + age + "years old.");
+    }
+    public static double getNum(){
+        return 8.88;
+    }
+    public static int plus(int num1, int num2){
+       return num1 + num2;
+    }
+    public static int getMinOfArray(int arr[]){
+        int min = arr[0];
+        for(int i = 1; i < arr.length; i++){
+            if(arr[i] < min){
+                min = arr[i];
+            }
+        }
+        return min;
+    }
+
+}
+package ooday01;
+
+
+public class Aoo {
+    void show(){}
+    void show(String name){}
+    void show(int age){}
+    void show(String name, int age){}
+    void show (int age,String name){}
+
+}
+package ooday01;
+
+public class OverLoadDemo {
+    public static void main(String[] args){
+        Aoo o = new Aoo();
+        int oe = 33;
+        o.show(oe);
+    }
+}
+package ooday01;
+
+public class Student {
+    String name;
+    int age;
+    String address;
+    void study(){
+            System.out.println(name + " study now");
+        }
+
+    void sayHi(){
+        System.out.println("Hello,my name is " + name + ", I'm "
+                                               + age + " years old ,my address is "
+                                               + address );
+    }
+
+}
+package ooday01;
+
+public class StudentTest {
+    public static void main(String[] args){
+        Student ww = new Student();
+        ww.name = "cookies";
+        ww.age = 7;
+        ww.address = "shengweiboyu";
+        ww.study();
+        ww.sayHi();
+    }
+}
+
+    }
+}
